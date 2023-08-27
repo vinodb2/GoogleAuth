@@ -1,0 +1,4 @@
+<h2>Today's Calendar Entries</h2>
+<ul *ngIf="googleSigninService.user">
+  <li *ngFor="let entry of calendarEntries">{{ entry.summary }}</li>
+</ul>
